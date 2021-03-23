@@ -1,0 +1,71 @@
+<!DOCTYPE html <head>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
+    <meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
+
+    <title>基于echarts与mapv的可视化航行辅助系统</title>
+    <!--引用百度地图API-->
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript"
+        src="http://api.map.baidu.com/api?ak=WEKSeRPHGGyNfOS4NLbc3cBD6f1YaqMU&services=true"></script>
+    <script src="http://mapv.baidu.com/build/mapv.min.js"></script>
+    <script src="js/jquery.js"></script>
+
+</head>
+
+<body>
+    <!--百度地图容器-->
+    <div class="main">
+        <div class="nav">
+            <div class="name">
+                <h2>基于echarts与mapv的可视化航行辅助系统</h2>
+            </div>
+            <div class="function">
+                <li class="time">时间轴功能</li>
+                <li class="search">搜索</li>
+                <li class="erlitu">热力图</li>
+                <li class="look">轨迹可视化</li>
+                <li class="count">航迹计算</li>
+            </div>
+            <!-- <div class="showtime">2021年3月20 00时00分00秒</div> -->
+        </div>
+
+        <div id="allmap"></div>
+        <div class="showdata">
+            <form action="">
+                <!-- <input type="text"> -->
+                <p class="showtime">当前时间：2021年3月20 00时00分00秒</p>
+                <div class="searchkuang">
+                    <input type="search" name="" id="" placeholder="请输入船舶的MMSI">
+                    <button class="searchbtn">搜索</button>
+                </div>
+                <table>
+                    <tr>
+                        <td>船名</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>船长</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>船宽</td>
+                        <td></td>
+                    </tr>
+
+                </table>
+            </form>
+        </div>
+    </div>
+
+</body>
+<script src="js/index.js"></script>
+<!-- <script src="js/qwebchannel.js"></script> -->
+
+</html>

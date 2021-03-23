@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <script src="https://api.map.baidu.com/api?v=2.0&ak=WEKSeRPHGGyNfOS4NLbc3cBD6f1YaqMU"></script>
+    <script src="https://mapv.baidu.com/build/mapv.min.js"></script>
+
+    <title>基于echarts与mapv的可视化航行辅助系统</title>
+</head>
+
+<body>
+    <div id="allmap"></div>
+    <!--地图div-->
+    <div id="divStats"
+        style="position: absolute; top: 10px; right: 10px; background-color: #FFF;border-radius:5px; padding: 5px 10px;display: block;background:url(/cainiao/static/gairui/images/bg-1.png) left top;color:#FFFFFF; ">
+
+        <div>
+            供应商：<span id="orgCount">10</span>个
+        </div>
+        <div>
+            机构：<span id="devAllCount">86</span>个
+        </div>
+        <div>
+            设备：<span id="storageDev">80</span>台
+        </div>
+        <div>
+            安徽省：<span id="deliveryDev">30</span>台
+        </div>
+        <div>
+            福建省：<span id="faultDev">23</span>台
+        </div>
+        <div>
+            广东省：<span id="faultDev">27</span>台
+        </div>
+        <div>
+            <span id="spanStats" class="iconStats" style="cursor: pointer;" data-toggle="modal"
+                data-target="#devStatsModel"></span>
+            <input type="hidden" id="hidStats">
+        </div>
+    </div>
+
+</body>
+<script src="js/index.js"></script>
+
+</html>
